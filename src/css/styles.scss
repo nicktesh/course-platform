@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+//
+// SASS Main Styles //
+//
+
+$primary-font: "Raleway", sans-serif;
+$dark-bg: #061727;
+$light-bg: #dbe4eb;
+$alt-color: #62a0d1;
+$white: #ffffff;
+$black: #000000;
+$darkgrey: #2c333b;
+$lightgrey: #7e858a;
+$border-radius: 8px;
+
+//
+// End of SASS Main Styles //
+//
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: $primary-font;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: $black;
+  background-color: $white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+  color: $black;
+  line-height: 0.8;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+  }
+}
+
+//
+// Buttons //
+//
+
+.btn-primary {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $white;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 992px) {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-position: 100% 0;
+    moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dark-blue {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  position: relative;
+  z-index: 5;
+}
+
+.btn-outline {
+  background: transparent;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $alt-color;
+  cursor: pointer;
+  height: 55px;
+  text-align: center;
+  border: solid 2px $alt-color;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 992px) {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//
+// End of Buttons //
+//
+
+//
+// General Styles //
+//
+
+.pos-rel {
+  position: relative;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+//
+// End of General Styles //
+//
+
+.app-container {
+  display: flex;
+  width: 100%;
+
+  .home {
+    width: 100%;
+  }
+
+  .courses {
+    width: 100%;
+
+    img {
+      width: 100%;
+      max-width: 120px;
+    }
+  }
+
+  .messages {
+    width: 100%;
+  }
+
+  .manage {
+    width: 100%;
+  }
+
+  .settings {
+    width: 100%;
+  }
+}
+
+.navigation {
+  background-color: #444444;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 350px;
+
+  img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 40px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+
+    .navbar-nav {
+      text-align: left;
+
+      i {
+        margin-right: 15px;
+        font-size: 1.5em;
+      }
+
+      .nav-link {
+        color: $white;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        transition: ease all 0.1s;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }
+
+  .active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: $border-radius;
+  }
+}
