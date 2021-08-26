@@ -1,6 +1,6 @@
-# Courses Platform
+# Course Platform
 
-This is an online educational platform for users to use to access courses for software development.
+This is an online educational platform for users to use to access courses for all aspects of web development.
 
 # Tech
 
