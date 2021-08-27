@@ -1,21 +1,16 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
-import ProfileNav from "../components/ProfileNav";
-import NotificationBubble from "../components/NotificationBubble";
-import logo from "../assets/planet-frontend-alt.svg";
+import NotificationBubble from "./NotificationBubble";
 import dashboardIcon from "../assets/dashboard-icon.svg";
 import coursesIcon from "../assets/courses-icon.svg";
 import messagesIcon from "../assets/messages-icon.svg";
 import manageIcon from "../assets/manage-icon.svg";
 import settingsIcon from "../assets/settings-icon.svg";
 
-function Navigation(props) {
+function NavMobile(props) {
   return (
-    <div className="navigation">
+    <div className="nav-mobile">
       <div class="nav-container">
-        <Link class="navbar-brand" to="/">
-          <img src={logo} />
-        </Link>
         <div>
           <ul class="navbar-nav">
             <li>
@@ -48,8 +43,8 @@ function Navigation(props) {
                 to="/messages"
               >
                 <img src={messagesIcon} />
-                Messages
                 <NotificationBubble />
+                Messages
               </Link>
             </li>
             <li>
@@ -77,9 +72,8 @@ function Navigation(props) {
           </ul>
         </div>
       </div>
-      <ProfileNav />
     </div>
   );
 }
 
-export default withRouter(Navigation);
+export default withRouter(NavMobile);

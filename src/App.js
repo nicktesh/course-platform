@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   Navigation,
+  HeaderMobile,
+  NavMobile,
   Home,
   Courses,
   Messages,
@@ -13,6 +15,7 @@ function App() {
     <div className="App">
       <div className="app-container">
         <Router>
+          <HeaderMobile />
           <Navigation />
           <Switch>
             <Route path="/" exact component={() => <Home />} />
@@ -21,6 +24,7 @@ function App() {
             <Route path="/manage" exact component={() => <Manage />} />
             <Route path="/settings" exact component={() => <Settings />} />
           </Switch>
+          <NavMobile />
         </Router>
       </div>
     </div>

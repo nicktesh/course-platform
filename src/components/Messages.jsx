@@ -5,7 +5,7 @@ function Messages() {
     <div className="messages">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 my-5">
+          <div class="col-lg-12">
             <h1>Messages</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
