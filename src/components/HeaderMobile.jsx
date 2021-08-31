@@ -6,7 +6,7 @@ function HeaderMobile() {
   return (
     <div className="header-mobile">
       <img src={logo} />
-      <div className="mobile-profile"> 
+      <div className="mobile-profile">
         <img src={profilePic} />
       </div>
     </div>
