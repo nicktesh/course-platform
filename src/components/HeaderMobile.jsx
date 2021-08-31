@@ -8,7 +8,6 @@ function HeaderMobile() {
       <img src={logo} />
       <div className="mobile-profile">
         <img src={profilePic} />
-        <p>Nicholas Tesh</p>
       </div>
     </div>
   );
