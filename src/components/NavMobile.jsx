@@ -10,62 +10,62 @@ import settingsIcon from "../assets/settings-icon.svg";
 function NavMobile(props) {
   return (
     <div className="nav-mobile">
-      <div class="nav-container">
+      <div className="nav-container">
         <div>
-          <ul class="navbar-nav">
+          <ul className="navbar-nav">
             <li>
               <Link
-                class={`nav-link ${
+                className={`nav-link ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
                 to="/"
               >
-                <img src={dashboardIcon} />
+                <img src={dashboardIcon} alt="" />
                 Dashboard
               </Link>
             </li>
             <li>
               <Link
-                class={`nav-link ${
+                className={`nav-link ${
                   props.location.pathname === "/courses" ? "active" : ""
                 }`}
                 to="/courses"
               >
-                <img src={coursesIcon} />
+                <img src={coursesIcon} alt="" />
                 Courses
               </Link>
             </li>
             <li>
               <Link
-                class={`nav-link ${
+                className={`nav-link ${
                   props.location.pathname === "/messages" ? "active" : ""
                 }`}
                 to="/messages"
               >
-                <img src={messagesIcon} />
+                <img src={messagesIcon} alt="" />
                 <NotificationBubble />
                 Messages
               </Link>
             </li>
             <li>
               <Link
-                class={`nav-link ${
+                className={`nav-link ${
                   props.location.pathname === "/manage" ? "active" : ""
                 }`}
                 to="/manage"
               >
-                <img src={manageIcon} />
+                <img src={manageIcon} alt="" />
                 Manage
               </Link>
             </li>
             <li>
               <Link
-                class={`nav-link ${
+                className={`nav-link ${
                   props.location.pathname === "/settings" ? "active" : ""
                 }`}
                 to="/settings"
               >
-                <img src={settingsIcon} />
+                <img src={settingsIcon} alt="" />
                 Settings
               </Link>
             </li>

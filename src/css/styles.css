@@ -31,11 +31,23 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
   color: #000000;
-  line-height: 0.8; }
+  line-height: 1.2em; }
+  @media screen and (max-width: 992px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1.1em; } }
 
 h1,
 h2 {
   font-weight: 800; }
+  @media screen and (max-width: 992px) {
+    h1,
+    h2 {
+      font-size: 1.5em; } }
 
 h3,
 h4,
@@ -45,68 +57,56 @@ h6 {
 
 a {
   text-decoration: none; }
+  @media screen and (max-width: 992px) {
+    a {
+      font-size: 14px; } }
 
 @media screen and (max-width: 992px) {
   p {
     font-size: 14px; } }
 
 .btn-primary {
-  width: 200px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 128, 239, 0.1);
+  color: #0080ef;
+  font-weight: 700;
   cursor: pointer;
-  height: 55px;
   text-align: center;
   border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
-  @media screen and (max-width: 992px) {
-    .btn-primary {
-      width: 150px;
-      font-size: 14px; } }
+  border-radius: 8px;
+  padding: 10px 20px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s; }
   .btn-primary:hover {
-    background-position: 100% 0;
-    moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out; }
+    color: #ffffff;
+    background-color: rgba(0, 128, 239, 0.8); }
   .btn-primary:focus {
+    color: #ffffff;
+    background-color: rgba(0, 128, 239, 0.8);
     outline: none; }
 
-.dark-blue {
-  background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#4481eb), color-stop(#04befe), to(#3f86ed));
-  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-  -webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-          box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-  position: relative;
-  z-index: 5; }
-
-.btn-outline {
-  background: transparent;
-  width: 200px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #0080ef;
+.btn-alt {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  color: #000a13;
+  font-weight: 700;
   cursor: pointer;
-  height: 55px;
   text-align: center;
-  border: solid 2px #0080ef;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-          box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
-  moz-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
-  @media screen and (max-width: 992px) {
-    .btn-outline {
-      width: 150px;
-      font-size: 14px; } }
-  .btn-outline:hover {
-    opacity: 0.7; }
-  .btn-outline:focus {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s; }
+  .btn-alt:hover {
+    color: #ffffff;
+    background-color: rgba(0, 128, 239, 0.8); }
+  .btn-alt:focus {
+    color: #ffffff;
+    background-color: rgba(0, 128, 239, 0.8);
     outline: none; }
 
 .pos-rel {
@@ -307,6 +307,7 @@ p {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
+  z-index: 10;
   padding: 10px 20px;
   width: 100%;
   height: auto;
@@ -414,5 +415,131 @@ p {
       width: 35px;
       height: 35px;
       border-radius: 50%; }
+
+@media screen and (min-width: 1560px) {
+  .courses .col-lg-6 {
+    width: 50% !important; } }
+@media screen and (min-width: 992px) {
+  .courses .col-lg-6 {
+    width: 100%; } }
+.courses h1 {
+  margin-bottom: 20px; }
+.courses .courses-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+  .courses .courses-btns button:first-child {
+    margin-right: 20px; }
+.courses .continue-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .courses .continue-header a {
+    color: #0080ef;
+    -webkit-transition: ease 0.1s;
+    transition: ease 0.1s; }
+    .courses .continue-header a:hover {
+      cursor: pointer;
+      color: #000a13; }
+.courses .active-course {
+  position: relative;
+  z-index: 4;
+  border-radius: 8px;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s; }
+  .courses .active-course:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+  .courses .active-course img {
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    border-radius: 8px; }
+  .courses .active-course .course-tag {
+    background-color: #0080ef;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 20px; }
+  .courses .active-course .course-info {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    border-radius: 8px;
+    z-index: 6;
+    left: 20px;
+    bottom: 20px;
+    width: calc(100% - 40px); }
+    .courses .active-course .course-info h4 {
+      color: #ffffff;
+      margin-bottom: 20px; }
+  .courses .active-course .progress {
+    height: 5px;
+    border-radius: 1000px; }
+  .courses .active-course .progress-bar {
+    border-radius: 1000px;
+    background-color: #2ad500; }
+  .courses .active-course .width1 {
+    width: 72%; }
+  .courses .active-course .width2 {
+    width: 40%; }
+.courses .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 20px; }
+  .courses .searchbar img {
+    width: 100%;
+    max-width: 25px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 30px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .courses .searchbar .form-control {
+    padding: 12px 60px 10px 10px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s; }
+    .courses .searchbar .form-control::-webkit-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .courses .searchbar .form-control:-ms-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .courses .searchbar .form-control::-ms-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .courses .searchbar .form-control::placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .courses .searchbar .form-control:active {
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+    .courses .searchbar .form-control:focus {
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
 
 /*# sourceMappingURL=styles.css.map */

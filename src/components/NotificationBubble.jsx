@@ -2,7 +2,7 @@ import React from "react";
 
 function NotificationBubble() {
   return (
-    <div class="notification-bubble">
+    <div className="notification-bubble">
       <p>3</p>
     </div>
   );

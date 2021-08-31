@@ -3,11 +3,11 @@ import profilePic from "../assets/profile-pic.jpg";
 
 function ProfileNav() {
   return (
-    <div class="nav-profile">
-      <img src={profilePic} />
-      <div class="profile-content">
-        <p class="profile-name">Nicholas Tesh</p>
-        <p class="profile-email">info@nicktesh.com</p>
+    <div className="nav-profile">
+      <img src={profilePic} alt="Nicholas Tesh" />
+      <div className="profile-content">
+        <p className="profile-name">Nicholas Tesh</p>
+        <p className="profile-email">info@nicktesh.com</p>
       </div>
     </div>
   );

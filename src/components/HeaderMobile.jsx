@@ -5,9 +5,9 @@ import profilePic from "../assets/profile-pic.jpg";
 function HeaderMobile() {
   return (
     <div className="header-mobile">
-      <img src={logo} />
+      <img src={logo} alt="Planet Frontend" />
       <div className="mobile-profile">
-        <img src={profilePic} />
+        <img src={profilePic} alt="Nicholas Tesh" />
       </div>
     </div>
   );

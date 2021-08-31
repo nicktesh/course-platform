@@ -3,9 +3,9 @@ import React from "react";
 function Settings() {
   return (
     <div className="settings">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
             <h1>Settings</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

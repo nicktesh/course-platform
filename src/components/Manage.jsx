@@ -3,9 +3,9 @@ import React from "react";
 function Manage() {
   return (
     <div className="manage">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
             <h1>Manage</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -20,7 +20,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -34,7 +34,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -48,7 +48,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -62,7 +62,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -76,7 +76,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -90,7 +90,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -104,7 +104,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
@@ -118,7 +118,7 @@ function Manage() {
               sit amet. Mollis aliquam ut porttitor leo.
             </p>
           </div>
-          <div class="col-lg-12 my-5">
+          <div className="col-lg-12 my-5">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec

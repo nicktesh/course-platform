@@ -8,3 +8,4 @@ export { default as Manage } from "./Manage";
 export { default as Settings } from "./Settings";
 export { default as ProfileNav } from "./ProfileNav";
 export { default as NotificationBubble } from "./NotificationBubble";
+export { default as Searchbar } from "./Searchbar";
