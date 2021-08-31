@@ -436,11 +436,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
   height: 60px;
   background-color: $dark;
-  padding: 10px 40px;
+  padding: 10px 20px;
 
   @media screen and (min-width: 992px) {
     display: none;
@@ -459,13 +457,6 @@ p {
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      margin-right: 10px;
-    }
-
-    p {
-      color: $white;
-      font-weight: 700;
-      font-size: 12px;
     }
   }
 }

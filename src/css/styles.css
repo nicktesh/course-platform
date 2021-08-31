@@ -394,12 +394,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   height: 60px;
   background-color: #000a13;
-  padding: 10px 40px; }
+  padding: 10px 20px; }
   @media screen and (min-width: 992px) {
     .header-mobile {
       display: none; } }
@@ -416,11 +413,6 @@ p {
     .header-mobile .mobile-profile img {
       width: 35px;
       height: 35px;
-      border-radius: 50%;
-      margin-right: 10px; }
-    .header-mobile .mobile-profile p {
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 12px; }
+      border-radius: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
