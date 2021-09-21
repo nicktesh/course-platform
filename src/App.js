@@ -5,7 +5,6 @@ import {
   HeaderMobile,
   NavMobile,
   Home,
-  Courses,
   Messages,
   Manage,
   Settings,
@@ -19,7 +18,6 @@ function App() {
           <Navigation />
           <Switch>
             <Route path="/" exact component={() => <Home />} />
-            <Route path="/courses" exact component={() => <Courses />} />
             <Route path="/messages" exact component={() => <Messages />} />
             <Route path="/manage" exact component={() => <Manage />} />
             <Route path="/settings" exact component={() => <Settings />} />
