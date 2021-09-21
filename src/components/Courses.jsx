@@ -41,6 +41,15 @@ function Courses() {
                     Foundations of Mobile App Development: Building an App with
                     React Native
                   </h4>
+                  <div className="progress-mobile">
+                    <div
+                      className="progress-bar width1"
+                      role="progressbar"
+                      aria-valuenow="72"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                   <div className="progress">
                     <div
                       className="progress-bar width1"
@@ -51,18 +60,7 @@ function Courses() {
                     ></div>
                   </div>
                 </div>
-                <div class="course-main-img">
-                  <img src={courseimg1} alt="Course One" />
-                  <div className="progress-mobile">
-                    <div
-                      className="progress-bar width1"
-                      role="progressbar"
-                      aria-valuenow="72"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
+                <img src={courseimg1} alt="Course One" />
               </div>
             </a>
           </div>
@@ -77,6 +75,15 @@ function Courses() {
                     User Experience Essentials: Principles + Practice for Great
                     UI Design
                   </h4>
+                  <div className="progress-mobile">
+                    <div
+                      className="progress-bar width2"
+                      role="progressbar"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
                   <div className="progress">
                     <div
                       className="progress-bar width2"
@@ -87,18 +94,7 @@ function Courses() {
                     ></div>
                   </div>
                 </div>
-                <div class="course-main-img">
-                  <img src={courseimg2} alt="Course Two" />
-                  <div className="progress-mobile">
-                    <div
-                      className="progress-bar width2"
-                      role="progressbar"
-                      aria-valuenow="40"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
+                <img src={courseimg2} alt="Course Two" />
               </div>
             </a>
           </div>
