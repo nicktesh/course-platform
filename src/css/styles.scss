@@ -547,8 +547,8 @@ p {
 
       @media screen and (max-width: 992px) {
         backdrop-filter: unset;
-        background-color: transparent;
-        padding: 0;
+        background-color: $dark;
+        padding: 20px;
         margin-top: 10px;
         position: initial;
         width: 100%;
@@ -561,7 +561,6 @@ p {
         margin-bottom: 20px;
 
         @media screen and (max-width: 992px) {
-          color: $black;
           margin-bottom: 10px;
         }
       }
@@ -582,7 +581,7 @@ p {
       border-radius: 1000px;
       background-color: $darkgrey;
       display: flex;
-      margin-top: 15px;
+      margin-bottom: 10px;
 
       @media screen and (min-width: 992px) {
         display: none;
