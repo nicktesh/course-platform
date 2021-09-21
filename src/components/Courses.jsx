@@ -51,7 +51,18 @@ function Courses() {
                     ></div>
                   </div>
                 </div>
-                <img src={courseimg1} alt="Course One" />
+                <div class="course-main-img">
+                  <img src={courseimg1} alt="Course One" />
+                  <div className="progress-mobile">
+                    <div
+                      className="progress-bar width1"
+                      role="progressbar"
+                      aria-valuenow="72"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </a>
           </div>
@@ -76,7 +87,18 @@ function Courses() {
                     ></div>
                   </div>
                 </div>
-                <img src={courseimg2} alt="Course Two" />
+                <div class="course-main-img">
+                  <img src={courseimg2} alt="Course Two" />
+                  <div className="progress-mobile">
+                    <div
+                      className="progress-bar width2"
+                      role="progressbar"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </a>
           </div>
