@@ -2,7 +2,6 @@ export { default as Navigation } from "./Navigation";
 export { default as HeaderMobile } from "./HeaderMobile";
 export { default as NavMobile } from "./NavMobile";
 export { default as Home } from "./Home";
-export { default as Courses } from "./Courses";
 export { default as Messages } from "./Messages";
 export { default as Manage } from "./Manage";
 export { default as Settings } from "./Settings";
