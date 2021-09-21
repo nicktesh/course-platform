@@ -6,7 +6,7 @@ import logo from "../assets/planet-frontend-alt.svg";
 import coursesIcon from "../assets/courses-icon.svg";
 import messagesIcon from "../assets/messages-icon.svg";
 import manageIcon from "../assets/manage-icon.svg";
-import settingsIcon from "../assets/settings-icon.svg";
+import settingsIcon from "../assets/settings-icon.svg"; 
 
 function Navigation(props) {
   return (
