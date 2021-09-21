@@ -495,8 +495,17 @@ p {
     border-radius: $border-radius;
     transition: ease 0.2s;
 
+    @media screen and (max-width: 992px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+
+      @media screen and (max-width: 992px) {
+        box-shadow: none;
+      }
     }
 
     img {
@@ -512,6 +521,16 @@ p {
       border-radius: $border-radius;
       width: fit-content;
       margin-bottom: 20px;
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 0;
+      }
+
+      p {
+        @media screen and (max-width: 992px) {
+          font-size: 12px;
+        }
+      }
     }
 
     .course-info {
@@ -526,15 +545,48 @@ p {
       bottom: 20px;
       width: calc(100% - 40px);
 
+      @media screen and (max-width: 992px) {
+        backdrop-filter: unset;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 10px;
+        position: initial;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
       h4 {
         color: $white;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 992px) {
+          color: $black;
+          margin-bottom: 10px;
+        }
       }
     }
 
     .progress {
       height: 5px;
       border-radius: 1000px;
+      background-color: $lightgrey;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    .progress-mobile {
+      height: 5px;
+      border-radius: 1000px;
+      background-color: $darkgrey;
+      display: flex;
+      margin-top: 15px;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
     }
 
     .progress-bar {

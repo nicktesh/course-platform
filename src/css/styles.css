@@ -454,9 +454,22 @@ p {
   border-radius: 8px;
   -webkit-transition: ease 0.2s;
   transition: ease 0.2s; }
+  @media screen and (max-width: 992px) {
+    .courses .active-course {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
   .courses .active-course:hover {
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+    @media screen and (max-width: 992px) {
+      .courses .active-course:hover {
+        -webkit-box-shadow: none;
+                box-shadow: none; } }
   .courses .active-course img {
     width: 100%;
     position: relative;
@@ -470,6 +483,12 @@ p {
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 20px; }
+    @media screen and (max-width: 992px) {
+      .courses .active-course .course-tag {
+        margin-bottom: 0; } }
+    @media screen and (max-width: 992px) {
+      .courses .active-course .course-tag p {
+        font-size: 12px; } }
   .courses .active-course .course-info {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
@@ -482,12 +501,47 @@ p {
     left: 20px;
     bottom: 20px;
     width: calc(100% - 40px); }
+    @media screen and (max-width: 992px) {
+      .courses .active-course .course-info {
+        -webkit-backdrop-filter: unset;
+                backdrop-filter: unset;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 10px;
+        position: initial;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; } }
     .courses .active-course .course-info h4 {
       color: #ffffff;
       margin-bottom: 20px; }
+      @media screen and (max-width: 992px) {
+        .courses .active-course .course-info h4 {
+          color: #000000;
+          margin-bottom: 10px; } }
   .courses .active-course .progress {
     height: 5px;
-    border-radius: 1000px; }
+    border-radius: 1000px;
+    background-color: #f3f3f3; }
+    @media screen and (max-width: 992px) {
+      .courses .active-course .progress {
+        display: none; } }
+  .courses .active-course .progress-mobile {
+    height: 5px;
+    border-radius: 1000px;
+    background-color: #7d8085;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px; }
+    @media screen and (min-width: 992px) {
+      .courses .active-course .progress-mobile {
+        display: none; } }
   .courses .active-course .progress-bar {
     border-radius: 1000px;
     background-color: #2ad500; }
