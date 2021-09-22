@@ -2,6 +2,7 @@ import React from "react";
 import Searchbar from "../components/Searchbar";
 import courseimg1 from "../assets/course-img1.jpg";
 import courseimg2 from "../assets/course-img2.jpg";
+import courseicon1 from "../assets/settings-icon.svg";
 
 function Home() {
   return (
@@ -30,7 +31,7 @@ function Home() {
               <a>See all</a>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 p-3">
+          <div className="col-6">
             <a href="#">
               <div className="active-course">
                 <div className="course-info">
@@ -64,7 +65,7 @@ function Home() {
               </div>
             </a>
           </div>
-          <div className="col-lg-6 col-md-12 p-3">
+          <div className="col-6">
             <a href="#">
               <div className="active-course">
                 <div className="course-info">
@@ -97,6 +98,82 @@ function Home() {
                 <img src={courseimg2} alt="Course Two" />
               </div>
             </a>
+          </div>
+          <div className="col-12">
+            <div className="intro-header">
+              <h3>Featured courses</h3>
+              <a>See all</a>
+            </div>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="featured-course pink">
+                <div className="course-info">
+                  <h4>UX Design Masterclass for beginners</h4>
+                  <div className="course-bottom">
+                    <div className="total-lessons">
+                      <i>X</i>
+                      <p>15 lessons</p>
+                    </div>
+                    <img src={courseicon1} alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="featured-course blue">
+                <div className="course-info">
+                  <h4>How to create a mobile app from scratch</h4>
+                  <div className="course-bottom">
+                    <div className="total-lessons">
+                      <i>X</i>
+                      <p>10 lessons</p>
+                    </div>
+                    <img src={courseicon1} alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="featured-course yellow">
+                <div className="course-info">
+                  <h4>Autolayouts - How, When, and Why</h4>
+                  <div className="course-bottom">
+                    <div className="total-lessons">
+                      <i>X</i>
+                      <p>12 lessons</p>
+                    </div>
+                    <img src={courseicon1} alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="featured-course green">
+                <div className="course-info">
+                  <h4>Create a design system from the beginning</h4>
+                  <div className="course-bottom">
+                    <div className="total-lessons">
+                      <i>X</i>
+                      <p>20 lessons</p>
+                    </div>
+                    <img src={courseicon1} alt="" />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-12">
+            <div className="intro-header">
+              <h3>Top React courses</h3>
+              <a>See all</a>
+            </div>
           </div>
         </div>
       </div>
