@@ -416,12 +416,54 @@ p {
       height: 35px;
       border-radius: 50%; }
 
-@media screen and (min-width: 1560px) {
-  .courses .col-lg-6 {
-    width: 50% !important; } }
-@media screen and (min-width: 992px) {
-  .courses .col-lg-6 {
-    width: 100%; } }
+.courses .col-6 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  padding: 1rem; }
+  @media screen and (max-width: 1560px) {
+    .courses .col-6 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+  @media screen and (max-width: 992px) {
+    .courses .col-6 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .courses .col-6 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+.courses .col-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  padding: 1rem; }
+  @media screen and (max-width: 1560px) {
+    .courses .col-3 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 992px) {
+    .courses .col-3 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .courses .col-3 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
 .courses h1 {
   margin-bottom: 20px; }
 .courses .courses-btns {
@@ -548,6 +590,91 @@ p {
     width: 72%; }
   .courses .active-course .width2 {
     width: 40%; }
+.courses .intro-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px; }
+  .courses .intro-header a {
+    color: #0080ef;
+    -webkit-transition: ease 0.1s;
+    transition: ease 0.1s; }
+    .courses .intro-header a:hover {
+      cursor: pointer;
+      color: #000a13; }
+.courses .pink {
+  background-color: #d21db2; }
+.courses .blue {
+  background-color: #006af6; }
+.courses .yellow {
+  background-color: #ffbf4d; }
+.courses .green {
+  background-color: #00b38b; }
+.courses .featured-course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 30px;
+  border-radius: 8px; }
+  .courses .featured-course h4 {
+    color: #ffffff;
+    margin-bottom: 20px; }
+  .courses .featured-course a {
+    color: #ffffff; }
+    .courses .featured-course a:hover {
+      text-decoration: none; }
+  .courses .featured-course p {
+    color: #ffffff; }
+  .courses .featured-course i {
+    color: #ffffff;
+    margin-right: 10px; }
+  .courses .featured-course .course-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%; }
+  .courses .featured-course .course-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end; }
+    .courses .featured-course .course-bottom img {
+      width: 100%;
+      max-width: 80px;
+      height: 80px; }
+    .courses .featured-course .course-bottom .total-lessons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
 .courses .searchbar {
   display: -webkit-box;
   display: -ms-flexbox;

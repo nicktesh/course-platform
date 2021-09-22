@@ -448,15 +448,45 @@ p {
 // The main Courses Page Styles
 
 .courses {
-  @media screen and (min-width: 1560px) {
-    .col-lg-6 {
-      width: 50% !important;
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 1rem;
+
+    @media screen and (max-width: 1560px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 
-  @media screen and (min-width: 992px) {
-    .col-lg-6 {
-      width: 100%;
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 1rem;
+
+    @media screen and (max-width: 1560px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 
@@ -599,6 +629,94 @@ p {
 
     .width2 {
       width: 40%;
+    }
+  }
+
+  .intro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    a {
+      color: $alt-primary;
+      transition: ease 0.1s;
+
+      &:hover {
+        cursor: pointer;
+        color: $dark;
+      }
+    }
+  }
+
+  .pink {
+    background-color: #d21db2;
+  }
+
+  .blue {
+    background-color: #006af6;
+  }
+
+  .yellow {
+    background-color: #ffbf4d;
+  }
+
+  .green {
+    background-color: #00b38b;
+  }
+
+  .featured-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px;
+    border-radius: $border-radius;
+
+    h4 {
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    p {
+      color: $white;
+    }
+
+    i {
+      color: $white;
+      margin-right: 10px;
+    }
+
+    .course-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .course-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      img {
+        width: 100%;
+        max-width: 80px;
+        height: 80px;
+      }
+
+      .total-lessons {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 
