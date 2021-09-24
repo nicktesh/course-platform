@@ -16,6 +16,7 @@ This is an online educational platform for users to use to access courses for al
 https://course-platform-ntesh.herokuapp.com/
 
 # Updates
+- (9/24/2021) : Fixed up some styling for the entire Courses page. Changed the layout of the Active Courses title/progress. Created all new icons for the navigation as well as the featured courses section. Finished building out the Top React Courses section and added in new images/layout to match the Active Courses mobile view.
 - (9/22/2021) : Added in Featured Courses below the Active Courses section. Made a bunch of responsive fixes for the default Bootstrap col's to fit the dashboard layout and look better for tablet/mobile. Started implementing a Top React Courses section.
 - (9/21/2021) : Restyled the "Active Courses" for mobile. Now the course titles/category appear beneath the image, and the progress bar shows above the title. Removed the Dashboard page, updated both desktop and mobile navigation to relfect changes - didn't feel a dashboard page was needed so Courses will now act as homepage.
 - (8/31/2021) : Fixed a z-index error for mobile nav, as well as the positioning of the mobile header. Started building out the Courses page. Created a searchbar component, and added in "active" courses to continue working on - each course shows a progress bar to show how far you've gone through the course.
