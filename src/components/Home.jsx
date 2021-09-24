@@ -2,7 +2,15 @@ import React from "react";
 import Searchbar from "../components/Searchbar";
 import courseimg1 from "../assets/course-img1.jpg";
 import courseimg2 from "../assets/course-img2.jpg";
-import courseicon1 from "../assets/settings-icon.svg";
+import courseicon1 from "../assets/icons/folders-icon.svg";
+import courseicon2 from "../assets/icons/books-icon.svg";
+import courseicon3 from "../assets/icons/lamp-icon.svg";
+import courseicon4 from "../assets/icons/creativity-icon.svg";
+import lessonicon from "../assets/icons/lessons-icon.svg";
+import reactimg1 from "../assets/react-img1.jpg";
+import reactimg2 from "../assets/react-img2.jpg";
+import reactimg3 from "../assets/react-img3.jpg";
+import reactimg4 from "../assets/react-img4.jpg";
 
 function Home() {
   return (
@@ -112,10 +120,10 @@ function Home() {
                   <h4>UX Design Masterclass for beginners</h4>
                   <div className="course-bottom">
                     <div className="total-lessons">
-                      <i>X</i>
+                      <img src={lessonicon} alt="" className="lessons-icon" />
                       <p>15 lessons</p>
                     </div>
-                    <img src={courseicon1} alt="" />
+                    <img src={courseicon1} alt="" className="course-icon" />
                   </div>
                 </div>
               </div>
@@ -128,10 +136,10 @@ function Home() {
                   <h4>How to create a mobile app from scratch</h4>
                   <div className="course-bottom">
                     <div className="total-lessons">
-                      <i>X</i>
+                      <img src={lessonicon} alt="" className="lessons-icon" />
                       <p>10 lessons</p>
                     </div>
-                    <img src={courseicon1} alt="" />
+                    <img src={courseicon2} alt="" className="course-icon" />
                   </div>
                 </div>
               </div>
@@ -144,10 +152,10 @@ function Home() {
                   <h4>Autolayouts - How, When, and Why</h4>
                   <div className="course-bottom">
                     <div className="total-lessons">
-                      <i>X</i>
+                      <img src={lessonicon} alt="" className="lessons-icon" />
                       <p>12 lessons</p>
                     </div>
-                    <img src={courseicon1} alt="" />
+                    <img src={courseicon3} alt="" className="course-icon" />
                   </div>
                 </div>
               </div>
@@ -160,10 +168,10 @@ function Home() {
                   <h4>Create a design system from the beginning</h4>
                   <div className="course-bottom">
                     <div className="total-lessons">
-                      <i>X</i>
+                      <img src={lessonicon} alt="" className="lessons-icon" />
                       <p>20 lessons</p>
                     </div>
-                    <img src={courseicon1} alt="" />
+                    <img src={courseicon4} alt="" className="course-icon" />
                   </div>
                 </div>
               </div>
@@ -174,6 +182,60 @@ function Home() {
               <h3>Top React courses</h3>
               <a>See all</a>
             </div>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="category-course">
+                <img src={reactimg3} alt="Course One" />
+                <div className="course-info">
+                  <h4>React - Everything you need to know (and more)!</h4>
+                  <div className="course-tag">
+                    <p>ReactJS</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="category-course">
+                <img src={reactimg2} alt="Course One" />
+                <div className="course-info">
+                  <h4>Advanced React and Redux Development</h4>
+                  <div className="course-tag">
+                    <p>ReactJS</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="category-course">
+                <img src={reactimg1} alt="Course One" />
+                <div className="course-info">
+                  <h4>
+                    The Complete React Course (w/ Hooks, React Router, Redux)
+                  </h4>
+                  <div className="course-tag">
+                    <p>ReactJS</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div className="col-3">
+            <a href="#">
+              <div className="category-course">
+                <img src={reactimg4} alt="Course One" />
+                <div className="course-info">
+                  <h4>Node &amp; React - Getting Started</h4>
+                  <div className="course-tag">
+                    <p>ReactJS</p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
