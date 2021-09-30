@@ -1,129 +1,132 @@
 import React from "react";
+import MiniSearchbar from "../components/MiniSearchbar";
+import profilePic from "../assets/profile-pic.jpg";
 
 function Messages() {
   return (
     <div className="messages">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-12">
             <h1>Messages</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec
-              feugiat in fermentum posuere. Venenatis lectus magna fringilla
-              urna porttitor rhoncus. Diam sollicitudin tempor id eu. Sed
-              blandit libero volutpat sed cras ornare. Nulla pellentesque
-              dignissim enim sit amet. Mattis nunc sed blandit libero volutpat
-              sed cras ornare arcu. Ullamcorper malesuada proin libero nunc
-              consequat interdum varius sit amet. Eget nunc lobortis mattis
-              aliquam. Fusce ut placerat orci nulla pellentesque dignissim enim
-              sit amet. Mollis aliquam ut porttitor leo.Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nec feugiat in fermentum posuere. Venenatis
-              lectus magna fringilla urna porttitor rhoncus. Diam sollicitudin
-              tempor id eu. Sed blandit libero volutpat sed cras ornare. Nulla
-              pellentesque dignissim enim sit amet. Mattis nunc sed blandit
-              libero volutpat sed cras ornare arcu. Ullamcorper malesuada proin
-              libero nunc consequat interdum varius sit amet. Eget nunc lobortis
-              mattis aliquam. Fusce ut placerat orci nulla pellentesque
-              dignissim enim sit amet. Mollis aliquam ut porttitor leo.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nec feugiat in fermentum posuere. Venenatis
-              lectus magna fringilla urna porttitor rhoncus. Diam sollicitudin
-              tempor id eu. Sed blandit libero volutpat sed cras ornare. Nulla
-              pellentesque dignissim enim sit amet. Mattis nunc sed blandit
-              libero volutpat sed cras ornare arcu. Ullamcorper malesuada proin
-              libero nunc consequat interdum varius sit amet. Eget nunc lobortis
-              mattis aliquam. Fusce ut placerat orci nulla pellentesque
-              dignissim enim sit amet. Mollis aliquam ut porttitor leo.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nec feugiat in fermentum posuere. Venenatis
-              lectus magna fringilla urna porttitor rhoncus. Diam sollicitudin
-              tempor id eu. Sed blandit libero volutpat sed cras ornare. Nulla
-              pellentesque dignissim enim sit amet. Mattis nunc sed blandit
-              libero volutpat sed cras ornare arcu. Ullamcorper malesuada proin
-              libero nunc consequat interdum varius sit amet. Eget nunc lobortis
-              mattis aliquam. Fusce ut placerat orci nulla pellentesque
-              dignissim enim sit amet. Mollis aliquam ut porttitor leo.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nec feugiat in fermentum posuere. Venenatis
-              lectus magna fringilla urna porttitor rhoncus. Diam sollicitudin
-              tempor id eu. Sed blandit libero volutpat sed cras ornare. Nulla
-              pellentesque dignissim enim sit amet. Mattis nunc sed blandit
-              libero volutpat sed cras ornare arcu. Ullamcorper malesuada proin
-              libero nunc consequat interdum varius sit amet. Eget nunc lobortis
-              mattis aliquam. Fusce ut placerat orci nulla pellentesque
-              dignissim enim sit amet. Mollis aliquam ut porttitor leo.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Nec feugiat in fermentum posuere. Venenatis
-              lectus magna fringilla urna porttitor rhoncus. Diam sollicitudin
-              tempor id eu. Sed blandit libero volutpat sed cras ornare. Nulla
-              pellentesque dignissim enim sit amet. Mattis nunc sed blandit
-              libero volutpat sed cras ornare arcu. Ullamcorper malesuada proin
-              libero nunc consequat interdum varius sit amet. Eget nunc lobortis
-              mattis aliquam. Fusce ut placerat orci nulla pellentesque
-              dignissim enim sit amet. Mollis aliquam ut porttitor leo.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in
-              fermentum posuere. Venenatis lectus magna fringilla urna porttitor
-              rhoncus. Diam sollicitudin tempor id eu. Sed blandit libero
-              volutpat sed cras ornare. Nulla pellentesque dignissim enim sit
-              amet. Mattis nunc sed blandit libero volutpat sed cras ornare
-              arcu. Ullamcorper malesuada proin libero nunc consequat interdum
-              varius sit amet. Eget nunc lobortis mattis aliquam. Fusce ut
-              placerat orci nulla pellentesque dignissim enim sit amet. Mollis
-              aliquam ut porttitor leo.
-            </p>
+          </div>
+          <div className="col-4">
+            <div className="active-messages">
+              <MiniSearchbar />
+              <div className="active-messages-inner">
+                <div className="message-preview active">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>Name Here</h4>
+                      <p>Amet minim mollil non desurent...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>2:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+                <div className="message-preview">
+                  <div className="message-info">
+                    <img src={profilePic} alt="" />
+                    <div className="message-content">
+                      <h4>AnotherName Here</h4>
+                      <p>Sed ut perspiciatis unde omnis...</p>
+                    </div>
+                  </div>
+                  <div className="message-time">
+                    <p>12:43pm</p>0
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-8">
+            <div className="message-box">message box here</div>
           </div>
         </div>
       </div>

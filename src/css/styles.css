@@ -426,6 +426,53 @@ p {
       height: 35px;
       border-radius: 50%; }
 
+.searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 20px; }
+  .searchbar img {
+    width: 100%;
+    max-width: 25px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 30px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .searchbar .form-control {
+    padding: 12px 60px 10px 10px;
+    padding-left: 60px;
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    -webkit-transition: ease 0.2s;
+    transition: ease 0.2s; }
+    .searchbar .form-control::-webkit-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .searchbar .form-control:-ms-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .searchbar .form-control::-ms-input-placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .searchbar .form-control::placeholder {
+      font-weight: 600;
+      opacity: 0.5; }
+    .searchbar .form-control:active {
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+    .searchbar .form-control:focus {
+      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+
 .courses .col-6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -787,51 +834,110 @@ p {
       width: fit-content; }
       .courses .category-course .course-info .course-tag p {
         font-size: 12px; }
-.courses .searchbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  z-index: 4;
+
+.messages .col-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 1rem; }
+  @media screen and (max-width: 1560px) {
+    .messages .col-4 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 992px) {
+    .messages .col-4 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .messages .col-4 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+.messages .col-8 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.666%;
+          flex: 0 0 66.666%;
+  max-width: 66.66%;
+  padding: 1rem; }
+  @media screen and (max-width: 1560px) {
+    .messages .col-8 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 992px) {
+    .messages .col-8 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .messages .col-8 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; } }
+.messages h1 {
   margin-bottom: 20px; }
-  .courses .searchbar img {
-    width: 100%;
-    max-width: 25px;
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 30px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-  .courses .searchbar .form-control {
-    padding: 12px 60px 10px 10px;
-    padding-left: 60px;
-    border: none;
-    border-radius: 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
-    -webkit-transition: ease 0.2s;
-    transition: ease 0.2s; }
-    .courses .searchbar .form-control::-webkit-input-placeholder {
-      font-weight: 600;
-      opacity: 0.5; }
-    .courses .searchbar .form-control:-ms-input-placeholder {
-      font-weight: 600;
-      opacity: 0.5; }
-    .courses .searchbar .form-control::-ms-input-placeholder {
-      font-weight: 600;
-      opacity: 0.5; }
-    .courses .searchbar .form-control::placeholder {
-      font-weight: 600;
-      opacity: 0.5; }
-    .courses .searchbar .form-control:active {
-      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
-    .courses .searchbar .form-control:focus {
-      -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
-              box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px; }
+.messages .active-messages {
+  height: 82vh;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px; }
+  .messages .active-messages .searchbar {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .messages .active-messages .active-messages-inner {
+    background-color: #ffffff;
+    height: 65vh;
+    overflow: auto;
+    padding: 0 10px; }
+    .messages .active-messages .active-messages-inner .message-preview {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0; }
+      .messages .active-messages .active-messages-inner .message-preview.active {
+        background-color: #fff8ee;
+        border-radius: 0 8px 8px 0;
+        border-left: solid 3px #ff9711; }
+      .messages .active-messages .active-messages-inner .message-preview .message-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .messages .active-messages .active-messages-inner .message-preview .message-info img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px; }
+      .messages .active-messages .active-messages-inner .message-preview .message-content h4 {
+        font-size: 18px;
+        margin-bottom: 2px; }
+      .messages .active-messages .active-messages-inner .message-preview .message-time {
+        text-align: right;
+        height: 100%;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+        padding-left: 10px; }
+        .messages .active-messages .active-messages-inner .message-preview .message-time p {
+          font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */
